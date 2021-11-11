@@ -146,7 +146,7 @@ var endGame = function() {
   // if player has more money than the high score, player has new high score
   if(playerInfo.money > highScore) {
     localStorage.setItem("highscore", playerInfo.money)
-    localStorage.getItem("name", playerInfo.name);
+    localStorage.setItem("name", playerInfo.name);
   }
 
   // if player is still alive, player wins!
